@@ -48,6 +48,7 @@
       }
 
       .container {
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -56,14 +57,15 @@
         width: var(--container-width);
         height: var(--container-height);
         background-color: var(--white);
-        padding-top: 16px;
-
+        margin: 0;
       }
 
       .qr-code img {
+        display: block;
         border-radius: 10px;
         width: var(--qr-code-size);
         height: var(--qr-code-size);
+        margin-top: 16px;
       }
 
       .description {
@@ -78,15 +80,11 @@
         color: var(--dark-blue);
         font-optical-sizing: auto;
         font-weight: 700;
-        font-style: bold;
         font-size: 22px;
         letter-spacing: 0px;
         line-height: 120%;
-        filter: drop-shadow(0px 4px 4px #0000006d);
-      }
-
-      a {
-        text-decoration: none;
+        filter: drop-shadow(0px 4px 4px #0000006d25);
+        margin: 0;
       }
 
       .info {
@@ -97,6 +95,7 @@
         letter-spacing: 0.2px;
         height: auto;
         padding: 0 16px;
+        margin: 0;
       }
 
       .attribution {
@@ -111,21 +110,24 @@
   </head>
   <body>
     <main class="container">
-      <div class="qr-code" tabindex="0">
-        <a href="https://www.frontendmentor.io">
+      <div class="qr-code">
         <img src="./images/image-qr-code.png" alt="QR Code linking to front end mentor coding challenges" />
       </div>
 
       <div class="description">
         <h1 class="heading">Improve your front-end skills by building projects</h1>
-
         <p class="info">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
       </div>
     </main>
   </body>
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" title="Visit Frontend Mentor (opens in a new tab">Frontend Mentor</a>. Coded by
-    <a href="#">Gillian Roberts</a>.
+    Challenge by
+    <a
+      href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank"
+      title="Visit Frontend Mentor (opens in a new tab"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Gillian Roberts</a>.
   </footer>
 </html>
